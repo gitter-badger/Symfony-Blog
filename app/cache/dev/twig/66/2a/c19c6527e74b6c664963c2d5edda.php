@@ -81,6 +81,10 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
         // line 32
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery-1.7.1.min.js"), "html", null, true);
         echo "\"></script>
+        <script src=\"";
+        // line 33
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/global.js"), "html", null, true);
+        echo "\"></script>
 
     </head>
     <body>
@@ -89,43 +93,43 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
 
 
             ";
-        // line 40
+        // line 41
         $this->displayBlock('content_header', $context, $blocks);
-        // line 85
+        // line 86
         echo "
             ";
-        // line 86
+        // line 87
         if ($this->getAttribute($this->getAttribute($this->getContext($context, "app"), "session"), "flash", array(0 => "notice"), "method")) {
-            // line 87
+            // line 88
             echo "                <div class=\"flash-message\">
                     <em>Notice</em>: ";
-            // line 88
+            // line 89
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getContext($context, "app"), "session"), "flash", array(0 => "notice"), "method"), "html", null, true);
             echo "
                 </div>
             ";
         }
-        // line 91
+        // line 92
         echo "
             <div class=\"symfony-content\">
                 ";
-        // line 93
+        // line 94
         $this->displayBlock('content', $context, $blocks);
-        // line 95
+        // line 96
         echo "            </div>
 
             ";
-        // line 97
+        // line 98
         if (array_key_exists("code", $context)) {
-            // line 98
+            // line 99
             echo "                <h2>Code behind this page</h2>
                 <div class=\"symfony-content\">";
-            // line 99
+            // line 100
             echo $this->getContext($context, "code");
             echo "</div>
             ";
         }
-        // line 101
+        // line 102
         echo "        </div>
     </body>
 </html>
@@ -138,14 +142,14 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
         echo "Demo Bundle";
     }
 
-    // line 40
+    // line 41
     public function block_content_header($context, array $blocks = array())
     {
-        // line 41
+        // line 42
         echo "                <div id=\"header\">
                     <div id=\"top_logo\">
                         <a href=\"";
-        // line 43
+        // line 44
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("home"), "html", null, true);
         echo "\" target=\"_self\"><span class=\"c_image c_logo\"></span></a>
                     </div>
@@ -161,9 +165,9 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
                     </div>
                     
                     ";
-        // line 56
+        // line 57
         if (true) {
-            // line 57
+            // line 58
             echo "                        <div id=\"unloged_menu\">
                             <a href=\"javascript:void(0);\" id=\"login_btn\" box=\"login_box\">Login</a>
                             &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -173,7 +177,7 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
                         </div>
                     ";
         } else {
-            // line 65
+            // line 66
             echo "                        <div id=\"loged_menu\">
                             <span class=\"c_image user_icon\"></span>
                             <span class=\"username\">CagunA</span>
@@ -181,36 +185,36 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
                         </div>
                     ";
         }
-        // line 71
+        // line 72
         echo "                    <div class=\"clear\"></div>
                     
                     <div id=\"login_box\" class=\"header_box\">
                         ";
-        // line 74
-        $this->env->loadTemplate("esubpublicBundle:Includes:login_box.html.twig")->display($context);
         // line 75
+        $this->env->loadTemplate("esubpublicBundle:Includes:login_box.html.twig")->display($context);
+        // line 76
         echo "                    </div>
                     <div id=\"signup_box\" class=\"header_box\">
                         ";
-        // line 77
-        $this->env->loadTemplate("esubpublicBundle:Includes:signup_box.html.twig")->display($context);
         // line 78
+        $this->env->loadTemplate("esubpublicBundle:Includes:signup_box.html.twig")->display($context);
+        // line 79
         echo "                    </div>
                     <div id=\"clean_box\" class=\"header_box\">
                         ";
-        // line 80
-        $this->env->loadTemplate("esubpublicBundle:Includes:clean_box.html.twig")->display($context);
         // line 81
+        $this->env->loadTemplate("esubpublicBundle:Includes:clean_box.html.twig")->display($context);
+        // line 82
         echo "                    </div>
                 </div>
                 <div style=\"clear: both\"></div>
             ";
     }
 
-    // line 93
+    // line 94
     public function block_content($context, array $blocks = array())
     {
-        // line 94
+        // line 95
         echo "                ";
     }
 
@@ -226,6 +230,6 @@ class __TwigTemplate_662ac19c6527e74b6c664963c2d5edda extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  212 => 94,  209 => 93,  202 => 81,  200 => 80,  196 => 78,  194 => 77,  190 => 75,  188 => 74,  183 => 71,  175 => 65,  165 => 57,  163 => 56,  147 => 43,  143 => 41,  140 => 40,  134 => 4,  127 => 101,  122 => 99,  119 => 98,  117 => 97,  113 => 95,  111 => 93,  107 => 91,  101 => 88,  98 => 87,  96 => 86,  93 => 85,  91 => 40,  80 => 32,  74 => 29,  69 => 27,  65 => 26,  61 => 25,  57 => 24,  53 => 23,  48 => 21,  44 => 20,  25 => 4,  20 => 1,);
+        return array (  216 => 95,  213 => 94,  206 => 82,  204 => 81,  200 => 79,  198 => 78,  194 => 76,  192 => 75,  187 => 72,  179 => 66,  169 => 58,  167 => 57,  151 => 44,  147 => 42,  144 => 41,  138 => 4,  131 => 102,  126 => 100,  123 => 99,  121 => 98,  117 => 96,  115 => 94,  111 => 92,  105 => 89,  102 => 88,  100 => 87,  97 => 86,  95 => 41,  84 => 33,  80 => 32,  74 => 29,  69 => 27,  65 => 26,  61 => 25,  57 => 24,  53 => 23,  48 => 21,  44 => 20,  25 => 4,  20 => 1,);
     }
 }

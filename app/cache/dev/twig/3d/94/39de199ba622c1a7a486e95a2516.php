@@ -16,7 +16,7 @@ class __TwigTemplate_3d9439de199ba622c1a7a486e95a2516 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<form id=\"fileupload\" action=\"clean\" method=\"POST\" enctype=\"multipart/form-data\">
+        echo "<form id=\"fileupload\" action=\"\" method=\"POST\" enctype=\"multipart/form-data\">
 \t<div class=\"row\">\t
 \t\t<div class=\"fileupload-buttonbar delete_all\">
 \t\t\t
@@ -56,59 +56,55 @@ class __TwigTemplate_3d9439de199ba622c1a7a486e95a2516 extends Twig_Template
 \t};
 </script>
 
-<script id=\"template-download\" type=\"text/html\" src=\"";
+ ";
         // line 41
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/download_template.js"), "html", null, true);
-        echo "\" ></script>
-<script id=\"template-upload\" type=\"text/html\" src=\"";
+        $this->env->loadTemplate("esubpublicBundle:Includes:upload_template.html.php")->display($context);
         // line 42
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/upload_template.js"), "html", null, true);
-        echo "\" ></script>
-
+        echo "
 <script src=\"";
-        // line 44
+        // line 43
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.ui.widget.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 45
+        // line 44
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/load-image.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 46
+        // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/tmpl.min.js"), "html", null, true);
         echo "\"></script>
 <!-- Bootstrap Modal and Image Gallery are not required, but included for the demo -->
 <script src=\"";
-        // line 48
+        // line 47
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.iframe-transport.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 49
+        // line 48
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.fileupload.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 50
+        // line 49
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.fileupload-ui.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 51
+        // line 50
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/application.js"), "html", null, true);
         echo "\"></script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE >= 8 -->
 <script src=\"";
-        // line 53
+        // line 52
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.xdr-transport.js"), "html", null, true);
         echo "\"></script>
 <!-- postMessage Transport support can be added with the following plugin -->
 <script src=\"";
-        // line 55
+        // line 54
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/js/jquery.postmessage-transport.js"), "html", null, true);
         echo "\"></script>
 
 <div class=\"c_image shadwo_line\"></div>
 <div class=\"white_overlay\">
 \t<img src=\"";
-        // line 59
+        // line 58
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/esubpublic/images/159.gif"), "html", null, true);
         echo "\" />
 </div>";
@@ -126,6 +122,6 @@ class __TwigTemplate_3d9439de199ba622c1a7a486e95a2516 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  110 => 59,  103 => 55,  89 => 50,  85 => 49,  81 => 48,  76 => 46,  72 => 45,  68 => 44,  63 => 42,  59 => 41,  17 => 1,  212 => 94,  209 => 93,  202 => 81,  200 => 80,  196 => 78,  194 => 77,  190 => 75,  188 => 74,  183 => 71,  175 => 65,  165 => 57,  163 => 56,  147 => 43,  143 => 41,  140 => 40,  134 => 4,  127 => 101,  122 => 99,  119 => 98,  117 => 97,  113 => 95,  111 => 93,  107 => 91,  101 => 88,  98 => 53,  96 => 86,  93 => 51,  91 => 40,  80 => 32,  74 => 29,  69 => 27,  65 => 26,  61 => 25,  57 => 24,  53 => 23,  48 => 21,  44 => 20,  25 => 4,  20 => 1,);
+        return array (  106 => 58,  99 => 54,  94 => 52,  89 => 50,  85 => 49,  81 => 48,  77 => 47,  72 => 45,  68 => 44,  64 => 43,  61 => 42,  59 => 41,  17 => 1,);
     }
 }
