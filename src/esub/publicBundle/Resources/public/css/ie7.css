@@ -1,0 +1,49 @@
+/* 
+    Document   : ie7
+    Created on : Dec 16, 2011, 11:48:14 PM
+    Author     : CagunA
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+	display: block;
+}
+
+.topbar {
+    position: absolute;
+}
+.topbar ul, .topbar .container {
+    padding-top: 10px;
+}
+.topbar li {
+    display: inline;
+    margin-right: 10px;
+}
+.topbar a:hover {
+    color: #fff;
+}
+.span16 {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+}
+input {
+    display: inline;
+    width: auto;
+}
+/* The following is required for Modals to work on IE6 */
+.modal {
+    position: absolute;
+    top: 50%;
+    filter: none;
+}
+#gallery-modal.fullscreen {
+    overflow: hidden;
+}
+

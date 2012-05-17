@@ -1,0 +1,38 @@
+/* 
+    Document   : master
+    Created on : Dec 11, 2011, 6:26:12 PM
+    Author     : CagunA
+    Description:
+        Dimensions and positions
+*/
+
+body{margin:0px; padding:0px;}
+.clear {clear:both;}
+.gray_btn{border: solid 1px #c3c3c3; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; cursor: pointer;}
+div{position:relative;}
+#wrapper{width:880px; margin:0px auto;}
+#header{width:100%; padding-top: 30px;}
+#header #top_logo{float:left;}
+#header #top_logo a span.c_logo{display:block; width:173px; height:45px;}
+#header #searchbox {float:left; position: relative; margin-left:15px; width:460px; border: solid 1px #c3c3c3; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#header #searchbox .search_input {position:relative; float:left; width:415px; height:40px; display:block; }
+#header #searchbox .search_input input{width:456px; height: 40px; border:none; padding-left:5px;}
+#header #searchbox div.search_icon {position: absolute; top:0px; right: 0px; width:45px; height:40px; display:block; }
+#header #searchbox span.search_icon {height: 25px; margin: 5px; width: 37px; display:block; cursor: pointer;}
+#header #unloged_menu, #header #loged_menu {margin-left:15px; display: block; float:left;}
+#header #loged_menu{ display:bloxk; height: 40px; width:213px; border: solid 1px #c3c3c3; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; cursor: pointer;}
+#header #loged_menu span.user_icon {display:inline-block; width:25px; height: 25px; margin:4px; vertical-align: top;}
+#header #loged_menu span.username {display:inline-block;  height: 40px; vertical-align: top;}
+#header #loged_menu span.down_arrow {display:inline-block;  height: 25px; width: 25px; margin:4px; vertical-align: top; float: right;}
+#header #clean_box{width:100%; margin-top:20px; display:none;}
+#header #clean_box .shadwo_line {width:100%; height:50px;}
+#header #fileupload .fileupload-buttonbar{width: 520px; margin:5px auto;}
+#header #fileupload .fileupload-buttonbar.delete_all{width: 100%; padding-left:2px; display: none;}
+#header #fileupload .fileinput-button, #header #fileupload .start{width:250px; height: 40px; text-align: center; display:inline-block; line-height: 40px;}
+#header #fileupload .start{height: 42px;}
+#header #login_box{width:100%; display:none;}
+#header #login_box .shadwo_line {width:100%; height:50px;}
+#header #login_box form {position: repative; display:block; margin:10px auto; width:600px;}
+#header #login_box form .login_input {width: 220px; height: 30px; margin-right:15px; border:none; padding-left:5px; border: solid 1px #c3c3c3; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#header #login_box form .login_submit {width: 95px; height: 30px;}
+#header #clean_box .white_overlay{ position: absolute; top:-10px; left:-10px; display:none; text-align: center;}

@@ -10,6 +10,7 @@ use Acme\DemoBundle\Form\ContactType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
+use caguna\demoBundle\Entity\User;
 class DemoController extends Controller
 {
     /**
@@ -18,7 +19,11 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
+        
+        new User;
         return array();
+        
+        
     }
 
     /**

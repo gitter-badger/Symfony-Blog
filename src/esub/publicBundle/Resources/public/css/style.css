@@ -1,0 +1,26 @@
+/* 
+    Document   : style
+    Created on : Feb 12, 2012, 4:11:37 PM
+    Author     : CagunA
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body{
+	background: #e3e3e3;
+}
+
+.under_construction{
+	background: url(./../images/under-construction.png) no-repeat;
+	width: 1267px;
+	height: 605px;
+	margin:100px auto 0px;
+}

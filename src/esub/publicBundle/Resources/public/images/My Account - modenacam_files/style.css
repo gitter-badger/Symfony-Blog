@@ -1,0 +1,230 @@
+/* 
+    Document   : style
+    Created on : Mar 11, 2012, 1:49:29 PM
+    Author     : CagunA
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+}
+
+.strip{
+	background-image: url(../images/images_set.png);
+	background-repeat: no-repeat;
+}
+
+#page_bg{
+	background: url(../images/page_bg.jpg) top center no-repeat;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+/***************************************************************/
+/**********************   FONT COLORS   ************************/
+
+.red{
+	color: #fa0606;
+}
+
+.white{
+	color: #ffffff;
+}
+
+.black{
+	color: #000000;
+}
+
+.dark_gray{
+	color: #666666;
+}
+
+/***************************************************************/
+/**********************   LOGO BOX   ***************************/
+
+#logo_box{
+	float:left;
+	behavior: url(/assets/modena_t3/css/pie/PIE.htc);
+	position: relative;
+	padding: 15px;
+	position: relative;
+	margin:0px 12px 20px 12px;
+	border: 1px solid #000000;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius:  0px 0px 10px 10px;
+    border-radius:  0px 0px 10px 10px;
+	background: #3c3c3c; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNjM2MzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTE1MTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #3c3c3c 0%, #151515 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c3c3c), color-stop(100%,#151515)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* IE10+ */
+	background: linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* W3C */
+	-pie-background: linear-gradient(top, #3c3c3c 0%, #151515 100%);
+}
+
+
+#logo_box .tl{
+	background-position: -187px -181px;
+	position: absolute;
+	left:-11px;
+	top:0px;
+	width:11px;
+	height: 12px;
+	display:block;
+	z-index:1;
+}
+#logo_box .tr{
+	background-position: -198px -181px;
+	position: absolute;
+	right:-11px;
+	top:0px;
+	width:11px;
+	height: 12px;
+	display:block;
+	z-index:1;
+}
+
+/***************************************************************/
+/*****************   WELCOME USER BOX   ************************/
+
+#welcome_user_box{
+	behavior: url(/assets/modena_t3/css/pie/PIE.htc);
+	float:right;
+	margin:0px 12px 20px 12px;
+	position: relative;
+	padding: 15px;
+	width:350px;
+	background: #3c3c3c; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNjM2MzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTE1MTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #3c3c3c 0%, #151515 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c3c3c), color-stop(100%,#151515)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* IE10+ */
+	background: linear-gradient(top,  #3c3c3c 0%,#151515 100%); /* W3C */
+	-pie-background: linear-gradient(top, #3c3c3c 0%, #151515 100%);
+	border: 1px solid #000000;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius:  0px 0px 10px 10px;
+    border-radius:  0px 0px 10px 10px;
+}
+
+#welcome_user_box .tl{
+	background-position: -190px -193px;
+	position: absolute;
+	left:-8px;
+	top:0px;
+	width:8px;
+	height: 9px;
+	display:block;
+}
+#welcome_user_box .tr{
+	background-position: -198px -193px;
+	position: absolute;
+	right:-8px;
+	top:0px;
+	width:8px;
+	height: 9px;
+	display:block;
+}
+
+#welcome_user_box .text{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#welcome_user_box .username{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+}
+
+/***************************************************************/
+/*****************   MAIN NAV   ********************************/
+
+#main_nav{
+	behavior: url(/assets/modena_t3/css/pie/PIE.htc);
+	background: #8c080c; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjMDgwYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1MTAxMDUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #8c080c 0%, #510105 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c080c), color-stop(100%,#510105)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8c080c 0%,#510105 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8c080c 0%,#510105 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8c080c 0%,#510105 100%); /* IE10+ */
+	background: linear-gradient(top,  #8c080c 0%,#510105 100%); /* W3C */
+	-pie-background: linear-gradient(top, #8c080c 0%, #510105 100%);
+	border: 0px menu;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius:  0px 10px 10px 0px;
+    border-radius:  0px 10px 10px 0px;
+	margin-top:25px;
+	width:940px;
+	display: block;
+}
+
+#main_nav .tl{
+	background-position: -213px -181px;
+	position: absolute;
+	left:0px;
+	top:-9px;
+	width:15px;
+	height: 9px;
+	display:block;
+}
+
+#main_nav ul{
+	list-style: none;
+}
+
+#main_nav ul li{
+	display: inline;
+	padding: 0px 20px;
+}
+/***************************************************************/
+/*****************   PAGE BOX   ********************************/
+
+#page{
+	behavior: url(/assets/modena_t3/css/pie/PIE.htc);
+	background: #f4f4f4; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjExJSIgc3RvcC1jb2xvcj0iI2Q2ZDZkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNmQ2ZDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f4f4f4 0%, #d6d6d6 11%, #d6d6d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(11%,#d6d6d6), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 11%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 11%,#d6d6d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 11%,#d6d6d6 100%); /* IE10+ */
+	background: linear-gradient(top,  #f4f4f4 0%,#d6d6d6 11%,#d6d6d6 100%); /* W3C */
+	-pie-background: linear-gradient(top, #f4f4f4 0%, #d6d6d6 11%, #d6d6d6 100%);
+	border: 1px solid #5c5c5c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:  10px;
+    border-radius:  10px;
+}
+
+
+/************* TEMP  ****************/
+
+.black_box{
+	margin:0px;
+}
+
+#header {
+	margin-top:0px;
+}

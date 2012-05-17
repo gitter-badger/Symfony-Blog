@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Demo Bundle{% endblock %}</title>
+
+        <meta name="copyright" content="Copyright esub 2011. All rights reserved">
+        <meta name="owner" content="esub">
+        <meta name="publisher" content="esub">
+        <meta name="author" content="esub">
+        <meta name="language" content="english">
+        <meta name="rating" content="General">
+        <meta name="expires" content="never">
+        <meta name="distribution" content="Global">
+        <meta name="robots" content="index,FOLLOW">
+        <meta name="revisit-after" content="1 days">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="ro">
+        <!-- FAVICON -->
+
+        <link rel="shortcut icon" href="{{ asset('bundles/esubpublic/images/favicon.ico') }}" type="image/x-icon"/>
+        <link rel="icon" href="{{ asset('bundles/esubpublic/images/favicon.ico') }}" type="image/x-icon"/>
+        
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/master.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/bgs.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/fonts.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/jquery.fileupload-ui.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/bootstrap.css') }}" />
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/esubpublic/css/ie7.css') }}" />
+        <![endif]-->
+        
+        <script src="{{ asset('bundles/esubpublic/js/jquery-1.7.1.min.js') }}"></script>
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+
+
+            {% block content_header %}
+                <div id="header">
+                    <div id="top_logo">
+                        <a href="{{ path('home')}}" target="_self"><span class="c_image c_logo"></span></a>
+                    </div>
+                    <div id="searchbox">
+                        <div class="search_input">
+                            <form action="">
+                                <input type="text" name="search" value="Search" />
+                            </form>
+                        </div>
+                        <div class="search_icon">
+                            <span class="c_image search_icon"></span>
+                        </div>
+                    </div>
+                    
+                    {% if true %}
+                        <div id="unloged_menu">
+                            <a href="javascript:void(0);" id="login_btn" box="login_box">Login</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="javascript:void(0);" id="signup_btn" box="signup_box">Signup</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="javascript:void(0);" id="clean_btn" box="clean_box">Clean</a>
+                        </div>
+                    {% else %}
+                        <div id="loged_menu">
+                            <span class="c_image user_icon"></span>
+                            <span class="username">CagunA</span>
+                            <span class="c_image down_arrow"></span>
+                        </div>
+                    {% endif %}
+                    <div class="clear"></div>
+                    
+                    <div id="login_box" class="header_box">
+                        {% include 'esubpublicBundle:Includes:login_box.html.twig' %}
+                    </div>
+                    <div id="signup_box" class="header_box">
+                        {% include 'esubpublicBundle:Includes:signup_box.html.twig' %}
+                    </div>
+                    <div id="clean_box" class="header_box">
+                        {% include 'esubpublicBundle:Includes:clean_box.html.twig' %}
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            {% endblock %}
+
+            {% if app.session.flash('notice') %}
+                <div class="flash-message">
+                    <em>Notice</em>: {{ app.session.flash('notice') }}
+                </div>
+            {% endif %}
+
+            <div class="symfony-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            {% if code is defined %}
+                <h2>Code behind this page</h2>
+                <div class="symfony-content">{{ code|raw }}</div>
+            {% endif %}
+        </div>
+    </body>
+</html>

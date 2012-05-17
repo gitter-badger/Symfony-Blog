@@ -48,13 +48,13 @@ class SecuredController extends Controller
     }
 
     /**
-     * @Route("/hello", defaults={"name"="World"}),
-     * @Route("/hello/{name}", name="_demo_secured_hello")
+     * @Route("/hello", defaults={"name"="World", "x"="y"}),
+     * @Route("/hello/{name}/{x}", name="_demo_secured_hello",  defaults={ "x"="y"}),
      * @Template()
      */
-    public function helloAction($name)
+    public function helloAction($name, $x)
     {
-        return array('name' => $name);
+        return array('name' => $name, 'x'=>$x);
     }
 
     /**
