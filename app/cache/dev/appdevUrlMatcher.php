@@ -156,6 +156,11 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'esub\\publicBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home',);
         }
 
+        // clean
+        if ($pathinfo === '/clean') {
+            return array (  '_controller' => 'esub\\publicBundle\\Controller\\DefaultController::cleanAction',  '_route' => 'clean',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

@@ -16,7 +16,9 @@ class __TwigTemplate_3d9439de199ba622c1a7a486e95a2516 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<form id=\"fileupload\" action=\"\" method=\"POST\" enctype=\"multipart/form-data\">
+        echo "<form id=\"fileupload\" action=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("clean"), "html", null, true);
+        echo "\" method=\"POST\" enctype=\"multipart/form-data\">
 \t<div class=\"row\">\t
 \t\t<div class=\"fileupload-buttonbar delete_all\">
 \t\t\t
@@ -122,6 +124,6 @@ class __TwigTemplate_3d9439de199ba622c1a7a486e95a2516 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  106 => 58,  99 => 54,  94 => 52,  89 => 50,  85 => 49,  81 => 48,  77 => 47,  72 => 45,  68 => 44,  64 => 43,  61 => 42,  59 => 41,  17 => 1,);
+        return array (  108 => 58,  101 => 54,  96 => 52,  91 => 50,  87 => 49,  83 => 48,  79 => 47,  74 => 45,  70 => 44,  66 => 43,  63 => 42,  61 => 41,  17 => 1,);
     }
 }
