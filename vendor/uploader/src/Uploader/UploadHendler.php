@@ -14,7 +14,7 @@ namespace Uploader;
 
 error_reporting(E_ALL | E_STRICT);
 
-class Upload_handler
+class UploadHendler
 {
     private $user_unic_id;
     private $options;

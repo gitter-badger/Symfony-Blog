@@ -6,8 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Clean;
-use Uploader;
+use Uploader\UploadHendler;
 
 class DefaultController extends Controller
 {
@@ -35,7 +34,7 @@ class DefaultController extends Controller
         header('Access-Control-Allow-Headers: X-File-Name, X-File-Type, X-File-Size');
         header('Vary: Accept');
 
-        $uploader = new Uploader();
+        $uploader = new UploadHendler();
 
         if (isset($_SERVER['HTTP_ACCEPT']) &&
             (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
