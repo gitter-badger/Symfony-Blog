@@ -35,6 +35,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_configurator_final' => true,
        'esub_admin_default_index' => true,
        'home' => true,
+       'clean' => true,
     );
 
     /**
@@ -166,5 +167,10 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function gethomeRouteInfo()
     {
         return array(array (), array (  '_controller' => 'esub\\publicBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/',  ),));
+    }
+
+    private function getcleanRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'esub\\publicBundle\\Controller\\DefaultController::cleanAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/clean',  ),));
     }
 }
