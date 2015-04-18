@@ -1,6 +1,8 @@
 Symfony Standard Edition
 ========================
 
+[![Join the chat at https://gitter.im/CagunA/Symfony-Blog](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CagunA/Symfony-Blog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
 application that you can use as the skeleton for your new app. If you want
 to learn more about the features included, see the "What's Inside?" section.
